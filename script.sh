@@ -1,9 +1,9 @@
 #!/bin/bash
 
-x=$(( 0 + random % (20 -0 + 1) ))
+x=$(( 0 + random % (20 - 0 + 1) ))
 
 echo "================================="
-     # Guess a number between 0 to 30
+     # Guess a number between 0 to 20
 echo "=================================="
 read -r -p "Enter value guessed: " y
 
