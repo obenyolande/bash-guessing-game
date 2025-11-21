@@ -1,16 +1,16 @@
 #!/bin/bash
 
-x=$(( 0 + random % (20 -0 + 1) ))
 
-echo "================================="
-      Guess a number between 0 to 30
-echo "=================================="
-read -p "Enter value guessed: " y
+numb=20
+while (true); do
+read -r -p " Enter value guess: " guess
 
-if [[ $y -eq $x ]]; then
-echo "you Win"
-elif [[ $y -lt $x ]]; then
-echo "you Loose"
+if [[ $guess -eq $numb ]]; then
+echo "that's correct"
+break
+elif [[ $guess -gt $numb ]]; then
+echo "you Loose try again"
 else
-echo "you're below the win number"
+echo "you loose try again"
 fi
+done
