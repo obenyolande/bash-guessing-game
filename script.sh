@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 numb=20
 while (true); do
 read -r -p " Enter value guess: " guess
